@@ -15,13 +15,14 @@ with open(vote, 'r') as csvfile:
     total_votes = 0
     for row in csvreader:      
         total_votes += 1
-
+        
 #complete list of candidates who received votes
     #create candidate list dictionary
     candidates={}
     #get the candidate's name from the first row
     candidatename = row[2]
 
+    
     #check if candidate name is dictionary
     if candidatename in candidates:
         candidates[candidatename] +=1
