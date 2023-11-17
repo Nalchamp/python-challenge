@@ -6,18 +6,18 @@ import csv
 # Define the path to the csv file
 budget_data_path = os.path.join( "PyBank", "Resources", "budget_data.csv")
 
-# Initialize variables to store financial analysis
+# create variables to store financial analysis
 total_months = 0
 net_total = 0
 prev_profit_loss = 0
 changes = []
 dates = []
 
-# Read the csv file
+# read the csv file
 with open(budget_data_path, newline="") as csvfile:
     csvreader = csv.reader(csvfile, delimiter=",")
 
-    # Skip the header row
+    # skip the header row
     header = next(csvreader)
 
  # Loop through each row in the CSV file
@@ -51,6 +51,7 @@ greatest_decrease = min(changes)
 greatest_decrease_date = dates[changes.index(greatest_decrease)]
 
 # Print the financial analysis results
+#for decimal place print out https://realpython.com/python-modulo-string-formatting/#:~:text=To%20insert%20a%20percent%20character,that%20the%20conversion%20type%20is%20%25%20.
 print("Financial Analysis")
 print("-"*40)
 print(f"Total Months: {total_months}")
@@ -59,12 +60,12 @@ print(f"Average Change: ${average_change:.2f}")
 print(f"Greatest Increase in Profits: {greatest_increase_date} (${greatest_increase})")
 print(f"Greatest Decrease in Profits: {greatest_decrease_date} (${greatest_decrease})")
 
-
+#create output path for .txt file
 output_path = os.path.join("PyBank", "analysis", "Financial_Analysis.txt")
 #export to txt file
 with open(output_path, "w") as file:
     file.write("Financial Analysis\n")
-    file.write("-*40"+"\n")
+    file.write("-"*40 + "\n")
     file.write(f"Total Months: {total_months}\n")
     file.write(f"Total: ${net_total}\n")
     file.write(f"Average Change: ${average_change:.2f}\n")
