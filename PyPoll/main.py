@@ -55,19 +55,22 @@ print("-"*40)
 
 #create output path for .txt file
 output_path = os.path.join("PyPoll", "analysis", "Poll.txt")
+
 #export to txt file
 with open(output_path, "w") as file:
     file.write("Election Results\n")
     file.write("-"*40+"\n")
     file.write(f"Total Votes: {total_votes}\n")
     for candidate, result in candidates.items():
-        file.write(f"{candidate}: {['percentage']}% ({result['votes']})\n")
+        file.write(f"{candidate}: {percentage:.3f}% ({votes})\n")
+
     file.write("-"*40+"\n")
     file.write(f"Winner: {winner}\n")
     file.write("-"*40+"\n")
    
     
-    
+    #usage of the / n 
+    #https://www.idtech.com/blog/what-is-n-in-python
     
     
   

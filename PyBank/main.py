@@ -71,3 +71,7 @@ with open(output_path, "w") as file:
     file.write(f"Average Change: ${average_change:.2f}\n")
     file.write(f"Greatest Increase in Profits: {greatest_increase_date} (${greatest_increase})\n")
     file.write(f"Greatest Decrease in Profits: {greatest_decrease_date} (${greatest_decrease})\n")
+
+
+#usage of the / n 
+    #https://www.idtech.com/blog/what-is-n-in-python
