@@ -10,3 +10,5 @@ Fourth commit - Pybank.py code completed with a '.txt' file in the analysis fold
 
 Fifth commit - slight modifications to the pybank code and the associcated .txt file
                 almost completed pyPoll file with .txt left as only issue
+
+sixth commit - completed challenge. completed python files along with associated .txt output files. websites for specific codes added in the .py file
