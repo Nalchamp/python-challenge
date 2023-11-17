@@ -12,3 +12,6 @@ Fifth commit - slight modifications to the pybank code and the associcated .txt 
                 almost completed pyPoll file with .txt left as only issue
 
 sixth commit - completed challenge. completed python files along with associated .txt output files. websites for specific codes added in the .py file
+
+Assistance was gained for some of the codes specifically the counting of the "total votes" and the "net total" coding from coworker.
+
